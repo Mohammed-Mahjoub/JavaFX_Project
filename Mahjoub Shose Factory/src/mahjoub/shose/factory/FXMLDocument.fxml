@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mahjoub.shose.factory.FXMLDocumentController">
+   <children>
+       
+       
+      <AnchorPane fx:id="Main" prefHeight="640.0" prefWidth="960.0">
+         <children>
+            <ImageView fx:id="Background" fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/Background.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="344.0" layoutY="107.0" prefHeight="88.0" prefWidth="210.0" text="Mahjoub" textAlignment="CENTER" textFill="#3b3e3f">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Gabriola" size="75.0" />
+               </font>
+            </Label>
+            <Label layoutX="324.0" layoutY="178.0" prefHeight="73.0" prefWidth="258.0" text="Shose Factory" textFill="#3b3e3f">
+               <font>
+                  <Font name="Gabriola" size="60.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Men" fitHeight="150.0" fitWidth="200.0" layoutX="278.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/man.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnForMen" buttonType="RAISED" layoutX="315.0" layoutY="439.0" onAction="#btnForMen" style="-fx-background-color: #535657; -fx-background-radius: 25;" text="For Men" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="Women" fitHeight="150.0" fitWidth="200.0" layoutX="522.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/woman.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnForWomen" buttonType="RAISED" layoutX="547.0" layoutY="439.0" onAction="#btnForWomen" style="-fx-background-color: #535657; -fx-background-radius: 25;" text="For Women" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="logo" fitHeight="106.0" fitWidth="128.0" layoutX="559.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      
+      
+      <AnchorPane fx:id="ForWomen" prefHeight="640.0" prefWidth="960.0" visible="false">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/For%20Women.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnWClosedSlipper" layoutX="107.0" layoutY="56.0" onAction="#btnWClosedSlipper" prefHeight="44.0" prefWidth="165.0" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Closed Slipper" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnWSlipper" layoutX="107.0" layoutY="116.0" onAction="#btnWSlipper" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Slippers" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnWBoots" layoutX="107.0" layoutY="177.0" onAction="#btnWBoots" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Boots" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnWBack" layoutX="757.0" layoutY="529.0" onAction="#btnWBack" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Back.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      
+      
+      <AnchorPane fx:id="ForMen" prefHeight="640.0" prefWidth="960.0" visible="false">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/For%20Men.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnMSlipper" layoutX="698.0" layoutY="189.0" onAction="#btnMSlipper" style="-fx-background-color: #3366ff; -fx-background-radius: 25;" text="Slippers" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnMBoots" layoutX="698.0" layoutY="261.0" onAction="#btnMBoots" style="-fx-background-color: #3366ff; -fx-background-radius: 25;" text="Boots" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnMBack" layoutX="106.0" layoutY="538.0" onAction="#btnMBack" style="-fx-background-color: #3366ff; -fx-background-radius: 25;" text="Back.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      
+      
+      <AnchorPane fx:id="wBoots" prefHeight="640.0" prefWidth="960.0" visible="false">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/6703-11.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot1" fitHeight="249.0" fitWidth="310.0" layoutX="37.0" layoutY="33.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot2" fitHeight="218.0" fitWidth="287.0" layoutX="343.0" layoutY="36.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot3" fitHeight="228.0" fitWidth="297.0" layoutX="634.0" layoutY="37.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot4" fitHeight="199.0" fitWidth="258.0" layoutX="70.0" layoutY="348.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot5" fitHeight="218.0" fitWidth="287.0" layoutX="354.0" layoutY="341.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot6" fitHeight="228.0" fitWidth="297.0" layoutX="645.0" layoutY="336.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB6.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="wbBack" layoutX="392.0" layoutY="559.0" onAction="#wbBack" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Back.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="wbNext" layoutX="516.0" layoutY="559.0" onAction="#wbNext" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Next.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      
+      
+      <AnchorPane fx:id="wBoots2" prefHeight="640.0" prefWidth="960.0" visible="false">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/6703-11.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot7" fitHeight="249.0" fitWidth="310.0" layoutX="37.0" layoutY="33.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB7.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot8" fitHeight="218.0" fitWidth="287.0" layoutX="343.0" layoutY="36.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB8.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot9" fitHeight="228.0" fitWidth="297.0" layoutX="634.0" layoutY="37.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB9.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot10" fitHeight="199.0" fitWidth="258.0" layoutX="70.0" layoutY="348.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot11" fitHeight="218.0" fitWidth="287.0" layoutX="354.0" layoutY="341.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB11.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wBoot12" fitHeight="228.0" fitWidth="297.0" layoutX="645.0" layoutY="300.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wB12.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="wbBack2" layoutX="459.0" layoutY="557.0" onAction="#wbBack2" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Back.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      
+      
+      <AnchorPane fx:id="wSlipper" prefHeight="640.0" prefWidth="960.0" visible="false">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/6703-11.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wSlipper1" fitHeight="249.0" fitWidth="310.0" layoutX="34.0" layoutY="37.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wS1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wSlipper2" fitHeight="242.0" fitWidth="310.0" layoutX="343.0" layoutY="40.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wS2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wSlipper3" fitHeight="228.0" fitWidth="297.0" layoutX="636.0" layoutY="41.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wS3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wSlipper4" fitHeight="228.0" fitWidth="279.0" layoutX="45.0" layoutY="359.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wS4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wSlipper5" fitHeight="228.0" fitWidth="292.0" layoutX="341.0" layoutY="350.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wS5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wSlipper6" fitHeight="242.0" fitWidth="310.0" layoutX="627.0" layoutY="322.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wS6.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="wsBack" layoutX="459.0" layoutY="557.0" onAction="#wsBack" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Back.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      
+      
+      <AnchorPane fx:id="wClosedSlipper" prefHeight="640.0" prefWidth="960.0" visible="false">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/6703-11.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wClosedSlipper1" fitHeight="249.0" fitWidth="310.0" layoutX="34.0" layoutY="25.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wCS1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wClosedSlipper2" fitHeight="242.0" fitWidth="310.0" layoutX="343.0" layoutY="32.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wCS2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wClosedSlipper3" fitHeight="228.0" fitWidth="297.0" layoutX="636.0" layoutY="50.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wCS3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wClosedSlipper4" fitHeight="228.0" fitWidth="279.0" layoutX="61.0" layoutY="307.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wCS4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wClosedSlipper5" fitHeight="228.0" fitWidth="292.0" layoutX="341.0" layoutY="291.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wCS5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wClosedSlipper6" fitHeight="242.0" fitWidth="310.0" layoutX="627.0" layoutY="280.0" onMouseClicked="#WomenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/wCS6.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="wcsBack" layoutX="459.0" layoutY="557.0" onAction="#wcsBack" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Back.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      
+      
+      <AnchorPane fx:id="mBoots" prefHeight="640.0" prefWidth="960.0" visible="false">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/6703-11.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mBoot1" fitHeight="150.0" fitWidth="200.0" layoutX="110.0" layoutY="78.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mB1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mBoot2" fitHeight="163.0" fitWidth="210.0" layoutX="386.0" layoutY="71.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mB2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mBoot3" fitHeight="163.0" fitWidth="217.0" layoutX="665.0" layoutY="62.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mB3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mBoot4" fitHeight="199.0" fitWidth="271.0" layoutX="87.0" layoutY="305.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mB4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mBoot5" fitHeight="150.0" fitWidth="200.0" layoutX="402.0" layoutY="329.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mB5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mBoot6" fitHeight="171.0" fitWidth="210.0" layoutX="675.0" layoutY="313.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mB6.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="mBBack" layoutX="459.0" layoutY="557.0" onAction="#mBBack" style="-fx-background-color: #4d79ff; -fx-background-radius: 25;" text="Back.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      
+      
+      <AnchorPane fx:id="mSlipper" prefHeight="640.0" prefWidth="960.0" visible="false">
+         <children>
+            <ImageView fitHeight="640.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/6703-11.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mSlipper1" fitHeight="263.0" fitWidth="659.0" layoutX="191.0" layoutY="57.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mS1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mSlipper2" fitHeight="211.0" fitWidth="310.0" layoutX="536.0" layoutY="76.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mS2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mSlipper3" fitHeight="199.0" fitWidth="258.0" layoutX="189.0" layoutY="297.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mS3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mSlipper4" fitHeight="164.0" fitWidth="310.0" layoutX="551.0" layoutY="334.0" onMouseClicked="#MenOrder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/mS4.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="mSBack" layoutX="459.0" layoutY="557.0" onAction="#mSBack" style="-fx-background-color: #4d79ff; -fx-background-radius: 25;" text="Back.." textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      
+                  
+      <AnchorPane fx:id="WomenMeasurements" layoutX="327.0" layoutY="90.0" prefHeight="472.0" prefWidth="310.0" visible="false">
+         <children>
+            <ImageView fitHeight="472.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/Background2.jpg" />
+               </image>
+            </ImageView>
+            <JFXRadioButton fx:id="rW30" layoutX="32.0" layoutY="152.0" text="30" />
+            <JFXRadioButton fx:id="rW31" layoutX="32.0" layoutY="183.0" text="31" />
+            <JFXRadioButton fx:id="rW32" layoutX="32.0" layoutY="212.0" text="32" />
+            <JFXRadioButton fx:id="rW33" layoutX="32.0" layoutY="241.0" text="33" />
+            <JFXRadioButton fx:id="rW34" layoutX="32.0" layoutY="272.0" text="34" />
+            <JFXRadioButton fx:id="rW35" layoutX="32.0" layoutY="302.0" text="35" />
+            <JFXRadioButton fx:id="rW36" layoutX="32.0" layoutY="332.0" text="36" />
+            <JFXRadioButton fx:id="rW37" layoutX="165.0" layoutY="153.0" text="37" />
+            <JFXRadioButton fx:id="rW38" layoutX="165.0" layoutY="183.0" text="38" />
+            <JFXRadioButton fx:id="rW39" layoutX="165.0" layoutY="213.0" text="39" />
+            <JFXRadioButton fx:id="rW40" layoutX="165.0" layoutY="242.0" text="40" />
+            <JFXRadioButton fx:id="rW41" layoutX="165.0" layoutY="273.0" text="41" />
+            <JFXRadioButton fx:id="rW42" layoutX="165.0" layoutY="303.0" text="42" />
+            <JFXRadioButton fx:id="rW43" layoutX="165.0" layoutY="333.0" text="43" />
+            <JFXButton fx:id="wMeasermentSave" layoutX="79.0" layoutY="384.0" onAction="#wMeasermentSave" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Save.." textFill="WHITE" />
+            <JFXButton fx:id="wMeasermentBack" layoutX="198.0" layoutY="384.0" onAction="#wMeasermentBack" style="-fx-background-color: #ff1ab3; -fx-background-radius: 25;" text="Back.." textFill="WHITE" />
+            <JFXTextField fx:id="trW30" layoutX="81.0" layoutY="147.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW31" layoutX="81.0" layoutY="177.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW32" layoutX="81.0" layoutY="207.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW33" layoutX="81.0" layoutY="237.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW34" layoutX="81.0" layoutY="267.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW35" layoutX="81.0" layoutY="297.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW36" layoutX="81.0" layoutY="327.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW37" layoutX="214.0" layoutY="148.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW38" layoutX="214.0" layoutY="178.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW39" layoutX="214.0" layoutY="208.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW40" layoutX="214.0" layoutY="238.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW41" layoutX="214.0" layoutY="268.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW42" layoutX="214.0" layoutY="298.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="trW43" layoutX="214.0" layoutY="328.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #ff1ab3;" />
+            <JFXTextField fx:id="WomenOrder" layoutX="98.0" layoutY="92.0" promptText="File Name..." style="-fx-background-color: #ff1ab3;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="MenMeasurements" layoutX="327.0" layoutY="90.0" prefHeight="472.0" prefWidth="310.0" visible="false">
+         <children>
+            <ImageView fitHeight="472.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/Background2.jpg" />
+               </image>
+            </ImageView>
+            <JFXRadioButton fx:id="rM39" layoutX="32.0" layoutY="176.0" onMouseClicked="#MenOrder" text="39" />
+            <JFXRadioButton fx:id="rM40" layoutX="32.0" layoutY="207.0" onMouseClicked="#MenOrder" text="40" />
+            <JFXRadioButton fx:id="rM41" layoutX="32.0" layoutY="236.0" onMouseClicked="#MenOrder" text="41" />
+            <JFXRadioButton fx:id="rM42" layoutX="32.0" layoutY="265.0" onMouseClicked="#MenOrder" text="42" />
+            <JFXRadioButton fx:id="rM43" layoutX="32.0" layoutY="299.0" onMouseClicked="#MenOrder" text="43" />
+            <JFXRadioButton fx:id="rM44" layoutX="165.0" layoutY="174.0" onMouseClicked="#MenOrder" text="44" />
+            <JFXRadioButton fx:id="rM45" layoutX="165.0" layoutY="204.0" onMouseClicked="#MenOrder" text="45" />
+            <JFXRadioButton fx:id="rM46" layoutX="165.0" layoutY="235.0" onMouseClicked="#MenOrder" text="46" />
+            <JFXRadioButton fx:id="rM47" layoutX="165.0" layoutY="265.0" onMouseClicked="#MenOrder" text="47" />
+            <JFXRadioButton fx:id="rM48" layoutX="165.0" layoutY="295.0" onMouseClicked="#MenOrder" text="48" />
+            <JFXButton fx:id="mMeasermentSave" layoutX="79.0" layoutY="349.0" onAction="#mMeasermentSave" style="-fx-background-color: #3366ff; -fx-background-radius: 25;" text="Save.." textFill="WHITE" />
+            <JFXButton fx:id="mMeasermentBack" layoutX="198.0" layoutY="349.0" onAction="#mMeasermentBack" style="-fx-background-color: #3366ff; -fx-background-radius: 25;" text="Back.." textFill="WHITE" />
+            <JFXTextField fx:id="trM39" layoutX="81.0" layoutY="171.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM40" layoutX="81.0" layoutY="201.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM41" layoutX="81.0" layoutY="231.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM42" layoutX="81.0" layoutY="261.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM43" layoutX="81.0" layoutY="291.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM44" layoutX="214.0" layoutY="169.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM45" layoutX="214.0" layoutY="199.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM46" layoutX="214.0" layoutY="230.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM47" layoutX="214.0" layoutY="260.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="trM48" layoutX="214.0" layoutY="290.0" prefHeight="17.0" prefWidth="64.0" style="-fx-background-color: #3366ff;" />
+            <JFXTextField fx:id="MenOrder" layoutX="88.0" layoutY="112.0" promptText="File Name..." style="-fx-background-color: #3366ff;" />
+         </children>
+      </AnchorPane>
+      
+      
+   </children>
+</AnchorPane>
